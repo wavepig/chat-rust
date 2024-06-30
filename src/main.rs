@@ -48,8 +48,7 @@ async fn main() -> anyhow::Result<()> {
         Some(guard)
     };
 
-
-    error!("Hello, world!");
+    error!("start chat server");
 
     // 创建一个 Tcp Listener，监听 127.0.0.1:42069
     let server = TcpListener::bind("127.0.0.1:42069").await?;
